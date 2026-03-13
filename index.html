@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pergunta importante</title>
+
+<style>
+body{
+font-family: Arial;
+text-align:center;
+margin-top:120px;
+background:#111;
+color:white;
+}
+
+button{
+padding:15px 35px;
+font-size:22px;
+margin:10px;
+cursor:pointer;
+border:none;
+border-radius:12px;
+}
+
+#sim{
+background:#ff3b3b;
+color:white;
+}
+
+#nao{
+background:#28a745;
+color:white;
+}
+</style>
+
+<script>
+function clicouSim(){
+alert("❌ Resposta inválida. Tente novamente.");
+}
+
+function clicouNao(){
+if(confirm("Que bom 😌\nVocê tem uma surpresa.\nQuer receber?")){
+window.location.href="https://www.youtube.com/watch?v=BxFiEBNhDVM";
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Você está brava comigo? 😢</h1>
+
+<button id="sim" onclick="clicouSim()">Sim</button>
+<button id="nao" onclick="clicouNao()">Não</button>
+
+</body>
+</html>
